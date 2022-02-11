@@ -1,0 +1,10 @@
+f = open('date','wb')
+txt = bytes('ยินดีต้อนรับเข้าสู่ Python','utf-8')
+txt += bytes('Hello World','utf-8')
+f.write(txt)
+f.close()
+
+print("อ่านข้มมูลจาก binary file \n")
+f = open('data','rb')
+print(f.read(3))
+f.close()
